@@ -1,4 +1,4 @@
-window.__ModuleLoader__.load({id:'dsh-inline-references',factory(require){
+window.__ModuleLoader__.load({id:'dsh-codex-inline',factory(require){
 const React=require('react');
 const SITES = [
   {"id":"github","hosts":["github.com","www.github.com","gist.github.com"],"icon":"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNiAwQzcuMTYgMCAwIDcuMTYgMCAxNkMwIDIzLjA4IDQuNTggMjkuMDYgMTAuOTQgMzEuMThDMTEuNzQgMzEuMzIgMTIuMDQgMzAuODQgMTIuMDQgMzAuNDJDMTIuMDQgMzAuMDQgMTIuMDIgMjguNzggMTIuMDIgMjcuNDRDOCAyOC4xOCA2Ljk2IDI2LjQ2IDYuNjQgMjUuNTZDNi40NiAyNS4xIDUuNjggMjMuNjggNSAyMy4zQzQuNDQgMjMgMy42NCAyMi4yNiA0Ljk4IDIyLjI0QzYuMjQgMjIuMjIgNy4xNCAyMy40IDcuNDQgMjMuODhDOC44OCAyNi4zIDExLjE4IDI1LjYyIDEyLjEgMjUuMkMxMi4yNCAyNC4xNiAxMi42NiAyMy40NiAxMy4xMiAyMy4wNkM5LjU2IDIyLjY2IDUuODQgMjEuMjggNS44NCAxNS4xNkM1Ljg0IDEzLjQyIDYuNDYgMTEuOTggNy40OCAxMC44NkM3LjMyIDEwLjQ2IDYuNzYgOC44MiA3LjY0IDYuNjJDNy42NCA2LjYyIDguOTggNi4yIDEyLjA0IDguMjZDMTMuMzIgNy45IDE0LjY4IDcuNzIgMTYuMDQgNy43MkMxNy40IDcuNzIgMTguNzYgNy45IDIwLjA0IDguMjZDMjMuMSA2LjE4IDI0LjQ0IDYuNjIgMjQuNDQgNi42MkMyNS4zMiA4LjgyIDI0Ljc2IDEwLjQ2IDI0LjYgMTAuODZDMjUuNjIgMTEuOTggMjYuMjQgMTMuNCAyNi4yNCAxNS4xNkMyNi4yNCAyMS4zIDIyLjUgMjIuNjYgMTguOTQgMjMuMDZDMTkuNTIgMjMuNTYgMjAuMDIgMjQuNTIgMjAuMDIgMjYuMDJDMjAuMDIgMjguMTYgMjAgMjkuODggMjAgMzAuNDJDMjAgMzAuODQgMjAuMyAzMS4zNCAyMS4xIDMxLjE4QzI3LjQyIDI5LjA2IDMyIDIzLjA2IDMyIDE2QzMyIDcuMTYgMjQuODQgMCAxNiAwVjBaIiBmaWxsPSIjMjQyOTJFIi8+Cjwvc3ZnPgo="},
@@ -483,9 +483,9 @@ ctx.inputTriggers.registerSource({
   onPick({ candidate }) { return { text: `/${candidate.name} ` }; }
 });
   ctx.slots.inject('conversation.input.left',()=>ctx.slots.register({name:'conversation.input.left',id:'inline-references',inject:sessionId=>({sessionId})},WithMarks));
-  ctx.slots.inject('plugins.bundle.config',()=>ctx.slots.register({name:'plugins.bundle.config',key:'dsh-inline-references',locale:NS},Settings));
+  ctx.slots.inject('plugins.bundle.config',()=>ctx.slots.register({name:'plugins.bundle.config',key:'dsh-codex-inline',locale:NS},Settings));
 }
-const ZH={title:'行内引用',skillId:'Skill 名称',label:'显示名称',icon:'图标',add:'添加',save:'保存',remove:'删除',restore:'恢复',upload:'上传图标',invalid:'请检查 Skill 名称、显示名称和图标格式。',saved:'已保存',storageError:'存储失败',duplicate:'重复条目',skillsHint:'为 Skill 设置显示名称和图标。可上传 64 KB 以内的 PNG、JPEG 或 WebP 图片。',removeIcon:'移除图标'};
-const EN={title:'Inline references',skillId:'Skill name',label:'Display name',icon:'Icon',add:'Add',save:'Save',remove:'Remove',restore:'Restore',upload:'Upload icon',invalid:'Check the skill name, display name and icon.',saved:'Saved',storageError:'Storage error',duplicate:'Duplicate entry',skillsHint:'Set a display name and icon for the Skill. Upload a PNG, JPEG or WebP image up to 64 KB.',removeIcon:'Remove icon'};
+const ZH={title:'Codex 风格行内引用',skillId:'Skill 名称',label:'显示名称',icon:'图标',add:'添加',save:'保存',remove:'删除',restore:'恢复',upload:'上传图标',invalid:'请检查 Skill 名称、显示名称和图标格式。',saved:'已保存',storageError:'存储失败',duplicate:'重复条目',skillsHint:'为 Skill 设置显示名称和图标。可上传 64 KB 以内的 PNG、JPEG 或 WebP 图片。',removeIcon:'移除图标'};
+const EN={title:'Codex-style inline references',skillId:'Skill name',label:'Display name',icon:'Icon',add:'Add',save:'Save',remove:'Remove',restore:'Restore',upload:'Upload icon',invalid:'Check the skill name, display name and icon.',saved:'Saved',storageError:'Storage error',duplicate:'Duplicate entry',skillsHint:'Set a display name and icon for the Skill. Upload a PNG, JPEG or WebP image up to 64 KB.',removeIcon:'Remove icon'};
 return {inject:['slots','sessions','inputTriggers','locale'],apply};
 }});

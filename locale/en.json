@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Inline references",
-    "description": "Shows names and logos for Skills referenced in the draft and site icons for links; each Skill's name and logo can be edited on the plugin page."
+    "title": "Codex-style inline references",
+    "description": "Codex-inspired inline Skill names and website icons in the DeepSeek Harness composer. Customize each Skill’s name and icon."
   }
 }

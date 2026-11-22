@@ -1,8 +1,8 @@
 {
-  "name": "dsh-inline-references",
-  "version": "1.0.0",
+  "name": "dsh-codex-inline",
+  "version": "1.0.1",
   "type": "module",
-  "description": "Skill display names and website icons in the DeepSeek Harness message composer.",
+  "description": "Codex-inspired inline Skill names and website icons in the DeepSeek Harness composer.",
   "exports": {
     ".": "./index.js",
     "./client": "./client.js",
@@ -37,18 +37,19 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lexleizou/dsh-inline-references.git"
+    "url": "git+https://github.com/lexleizou/dsh-codex-inline.git"
   },
-  "homepage": "https://github.com/lexleizou/dsh-inline-references#readme",
+  "homepage": "https://github.com/lexleizou/dsh-codex-inline#readme",
   "bugs": {
-    "url": "https://github.com/lexleizou/dsh-inline-references/issues"
+    "url": "https://github.com/lexleizou/dsh-codex-inline/issues"
   },
   "keywords": [
     "dsh-plugin",
     "deepseek-harness",
     "composer",
     "favicon",
-    "skills"
+    "skills",
+    "codex"
   ],
   "engines": {
     "dsh": ">=0.2.2-rc.5 <0.3.0-0"

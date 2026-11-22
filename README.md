@@ -1,6 +1,8 @@
-# DSH Inline References · 行内引用
+# dsh-codex-inline · Codex 风格行内引用
 
-A community plugin that adds Skill names and website icons to the DeepSeek Harness message composer. You can set a display name and icon for each Skill. Supported URLs show their site icon as you draft a message.
+A DeepSeek Harness community plugin inspired by the way Codex shows references in the composer. Set a display name and icon for each Skill, and see site icons alongside supported links as you draft a message.
+
+参考 Codex 的输入框展示方式，在 DSH 草稿里显示 Skill 名称、Skill 图标和网址的站点图标。
 
 ![A typed URL with its site icon in the DSH composer](docs/taobao.png)
 
@@ -9,20 +11,20 @@ A community plugin that adds Skill names and website icons to the DeepSeek Harne
 Compatible with DSH `0.2.2-rc.5` (macOS Desktop verified). For DSH Desktop:
 
 ```sh
-dsh plugin --profile desktop add github:lexleizou/dsh-inline-references#v1.0.0
+dsh plugin --profile desktop add github:lexleizou/dsh-codex-inline#v1.0.1
 ```
 
 For a self-hosted DSH Web profile:
 
 ```sh
-dsh plugin --profile web add github:lexleizou/dsh-inline-references#v1.0.0
+dsh plugin --profile web add github:lexleizou/dsh-codex-inline#v1.0.1
 ```
 
-Use the profile that runs your DSH instance. Reload the desktop window or web page after installation. If you have a local build of the same plugin, disable that build before using the public package.
+Use the profile that runs your DSH instance. Reload the desktop window or web page after installation. If you have the earlier public package `dsh-inline-references`, disable or remove it before installing `dsh-codex-inline`. Saved Skill settings remain available in the same client. Disable any local build of this plugin before enabling the public package.
 
 ## 使用
 
-- **技能**。输入 `/` 并选择 Skill。在 **插件 → 行内引用** 中可以为每项 Skill 设置显示名称和图标，支持文字图标或不超过 64 KB 的 PNG、JPEG、WebP。复制和发送仍用原始 Skill 标识。
+- **技能**。输入 `/` 并选择 Skill。在 **插件 → Codex 风格行内引用** 中可以为每项 Skill 设置显示名称和图标，支持文字图标或不超过 64 KB 的 PNG、JPEG、WebP。复制和发送仍用原始 Skill 标识。
 - **网址**。手动输入受支持的网址，按空格生成行内链接，也可以单独粘贴。例如 `www.taobao.com`。点击无协议链接时使用 HTTPS，发送时保留输入的写法。
 - **站点**。内置 46 个站点品牌图标，覆盖 157 个公开主机名，包括 GitHub、ChatGPT、Claude、DeepSeek、Gmail、Outlook、淘宝、小红书、钉钉、飞书、哔哩哔哩等。完整匹配清单见 [源码](client.js)。
 
