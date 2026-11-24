@@ -8,17 +8,19 @@ A DeepSeek Harness community plugin inspired by the way Codex shows references i
 
 ## Install
 
-Compatible with DSH `0.2.2-rc.5+` (macOS Desktop verified). For DSH Desktop:
+Compatible with DSH `0.2.2-rc.5+` (macOS Desktop verified). Install from npm (or directly via DSH Plugin Hub):
 
 ```sh
-dsh plugin --profile desktop add github:lexleizou/dsh-codex-inline#v1.0.2
+dsh plugin --profile desktop add dsh-codex-inline
 ```
 
 For a self-hosted DSH Web profile:
 
 ```sh
-dsh plugin --profile web add github:lexleizou/dsh-codex-inline#v1.0.2
+dsh plugin --profile web add dsh-codex-inline
 ```
+
+You can also install from GitHub: `dsh plugin --profile desktop add github:lexleizou/dsh-codex-inline#v1.0.2`.
 
 Use the profile that runs your DSH instance. Reload the desktop window or web page after installation. If you have the earlier public package `dsh-inline-references`, disable or remove it before installing `dsh-codex-inline`. Saved Skill settings remain available in the same client. Disable any local build of this plugin before enabling the public package.
 
